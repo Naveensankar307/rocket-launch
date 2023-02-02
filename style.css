@@ -1,0 +1,51 @@
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.sky,.mud{
+    position: relative;
+}
+
+.sky{
+    height: 90% ;
+    background-color: skyblue;
+    
+}
+.mud{
+    height: 10% ;
+    background-color: saddlebrown;
+}
+.rocket{
+    height: 200px;
+    position: absolute;
+    left: 45%;
+    bottom: 25%;
+    animation-name: flyrocket;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flyrocket{
+    1%{
+        transform: translateY(-30px);
+    }
+    10%{
+        transform: translateY(-130px);
+    }
+    
+    50%{
+        transform: rotate(-35deg) translateY(-600px);
+        opacity: 70%;
+    }
+   
+}
